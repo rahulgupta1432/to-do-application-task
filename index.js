@@ -11,7 +11,13 @@ const seederDB=require("./config/seederData");
 const { seuqelizeCon } = require('./config/dbConfig');
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }));
-app.use(cors())
+const corsOptions = {
+    origin: 'https://to-do-application-task-api.vercel.app/api/v1/',
+    methods: 'GET, POST, OPTIONS, PUT, PATCH, DELETE',
+    allowedHeaders: 'Content-Type'
+  };
+
+app.use(cors(corsOptions));
 
 app.use("/api/v1/auth",authRoutes);
 app.use("/api/v1/task",taskRoutes);
