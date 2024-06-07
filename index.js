@@ -14,10 +14,12 @@ app.use(express.urlencoded({ extended: true }));
 const corsOptions = {
     origin: 'https://to-do-application-task-api.vercel.app/api/v1/',
     methods: 'GET, POST, OPTIONS, PUT, PATCH, DELETE',
-    allowedHeaders: 'Content-Type'
+    allowedHeaders: 'Content-Type, Authorization',
+    credentials: true
   };
 
 app.use(cors(corsOptions));
+app.use(cors())
 
 app.use("/api/v1/auth",authRoutes);
 app.use("/api/v1/task",taskRoutes);
