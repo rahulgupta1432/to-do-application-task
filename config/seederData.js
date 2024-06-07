@@ -4,12 +4,9 @@ const { User } = require('../models/UserModel');
 const Task  = require('../models/TaskModel');
 require('dotenv').config();
 const bcrypt=require('bcrypt');
-const sequelize = new Sequelize({
-  dialect: 'mysql',
-  host: 'localhost',
-  username: 'root',
-  password: '',
-  database: process.env.DB_NAME,
+const sequelize = new Sequelize(process.env.DB_NAME,process.env.DB_USER,process.env.DB_PASS,{
+  host:process.env.DB_HOST,
+  dialect:'mysql'
 });
 // sequelize.sync({alter:true})
 const seedDatabase=async()=> {

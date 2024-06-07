@@ -9,6 +9,7 @@ const seuqelizeCon=new Sequelize(process.env.DB_NAME,process.env.DB_USER,process
 
 seuqelizeCon.authenticate().then(()=>{
     console.log('Database connected successfully');
+    console.log("connect ho ja bhai");
 }).catch((error)=>{
     console.log('Error: '+error);
 })
