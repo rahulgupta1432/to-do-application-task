@@ -5,8 +5,11 @@
   "scripts": {
     "dev": "nodemon index.js",
     "jest": {
-      "reporters": ["default", "jest-junit"]
-    }    
+      "reporters": [
+        "default",
+        "jest-junit"
+      ]
+    }
   },
   "keywords": [],
   "author": "",
@@ -23,7 +26,8 @@
     "morgan": "^1.10.0",
     "mysql2": "^3.10.0",
     "nodemon": "^3.1.2",
-    "sequelize": "^6.37.3"
+    "sequelize": "^6.37.3",
+    "vercel": "^34.2.6"
   },
   "devDependencies": {
     "chai": "^5.1.1",
