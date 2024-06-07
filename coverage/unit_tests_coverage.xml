@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="jest tests" tests="10" failures="1" errors="0" time="2.594">
+  <testsuite name="Auth test suite" errors="0" failures="0" skipped="0" timestamp="2024-06-06T14:34:29" time="1.605" tests="2">
+    <testcase classname="Auth test suite Fetch All Users" name="Auth test suite Fetch All Users" time="0.144">
+    </testcase>
+    <testcase classname="Auth test suite Fetch By User Id" name="Auth test suite Fetch By User Id" time="0.004">
+    </testcase>
+  </testsuite>
+  <testsuite name="Auth test suite" errors="0" failures="1" skipped="0" timestamp="2024-06-06T14:34:29" time="1.7" tests="2">
+    <testcase classname="Auth test suite Register" name="Auth test suite Register" time="0.096">
+      <failure>Error: expect(received).toBe(expected) // Object.is equality
+
+Expected: 200
+Received: 404
+    at Object.&lt;anonymous&gt; (C:\Users\Rahul Gupta\Documents\Personal-Projects\to-do-application-task\test\authController.test.js:53:27)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)</failure>
+    </testcase>
+    <testcase classname="Auth test suite Login" name="Auth test suite Login" time="0.083">
+    </testcase>
+    <testcase classname=" Test execution failure: could be caused by test hooks like &apos;afterAll&apos;." name=" Test execution failure: could be caused by test hooks like &apos;afterAll&apos;." time="0">
+      <failure>{&quot;message&quot;:&quot;&quot;,&quot;stack&quot;:&quot;Error: listen EADDRINUSE: address already in use :::5000\n    at Server.setupListenHandle [as _listen2] (node:net:1898:16)\n    at listenInCluster (node:net:1946:12)\n    at Server.listen (node:net:2044:7)\n    at Function.listen (C:\\Users\\Rahul Gupta\\Documents\\Personal-Projects\\to-do-application-task\\node_modules\\express\\lib\\application.js:635:24)\n    at Object.&lt;anonymous&gt; (C:\\Users\\Rahul Gupta\\Documents\\Personal-Projects\\to-do-application-task\\index.js:44:5)\n    at Runtime._execModule (C:\\Users\\Rahul Gupta\\Documents\\Personal-Projects\\to-do-application-task\\node_modules\\jest-runtime\\build\\index.js:1439:24)\n    at Runtime._loadModule (C:\\Users\\Rahul Gupta\\Documents\\Personal-Projects\\to-do-application-task\\node_modules\\jest-runtime\\build\\index.js:1022:12)\n    at Runtime.requireModule (C:\\Users\\Rahul Gupta\\Documents\\Personal-Projects\\to-do-application-task\\node_modules\\jest-runtime\\build\\index.js:882:12)\n    at Runtime.requireModuleOrMock (C:\\Users\\Rahul Gupta\\Documents\\Personal-Projects\\to-do-application-task\\node_modules\\jest-runtime\\build\\index.js:1048:21)\n    at Object.&lt;anonymous&gt; (C:\\Users\\Rahul Gupta\\Documents\\Personal-Projects\\to-do-application-task\\test\\authController.test.js:3:13)\n    at Runtime._execModule (C:\\Users\\Rahul Gupta\\Documents\\Personal-Projects\\to-do-application-task\\node_modules\\jest-runtime\\build\\index.js:1439:24)\n    at Runtime._loadModule (C:\\Users\\Rahul Gupta\\Documents\\Personal-Projects\\to-do-application-task\\node_modules\\jest-runtime\\build\\index.js:1022:12)\n    at Runtime.requireModule (C:\\Users\\Rahul Gupta\\Documents\\Personal-Projects\\to-do-application-task\\node_modules\\jest-runtime\\build\\index.js:882:12)\n    at jestAdapter (C:\\Users\\Rahul Gupta\\Documents\\Personal-Projects\\to-do-application-task\\node_modules\\jest-circus\\build\\legacy-code-todo-rewrite\\jestAdapter.js:77:13)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at runTestInternal (C:\\Users\\Rahul Gupta\\Documents\\Personal-Projects\\to-do-application-task\\node_modules\\jest-runner\\build\\runTest.js:367:16)\n    at runTest (C:\\Users\\Rahul Gupta\\Documents\\Personal-Projects\\to-do-application-task\\node_modules\\jest-runner\\build\\runTest.js:444:34)\n    at Object.worker (C:\\Users\\Rahul Gupta\\Documents\\Personal-Projects\\to-do-application-task\\node_modules\\jest-runner\\build\\testWorker.js:106:12)&quot;}</failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="Task Controller" errors="0" failures="0" skipped="0" timestamp="2024-06-06T14:34:29" time="1.791" tests="6">
+    <testcase classname="Task Controller User Add New Task" name="Task Controller User Add New Task" time="0.057">
+    </testcase>
+    <testcase classname="Task Controller fetch All Tasks" name="Task Controller fetch All Tasks" time="0.017">
+    </testcase>
+    <testcase classname="Task Controller User Update Task" name="Task Controller User Update Task" time="0.016">
+    </testcase>
+    <testcase classname="Task Controller Admin fetch All Users Tasks" name="Task Controller Admin fetch All Users Tasks" time="0.007">
+    </testcase>
+    <testcase classname="Task Controller Admin fetch All Tasks List" name="Task Controller Admin fetch All Tasks List" time="0.016">
+    </testcase>
+    <testcase classname="Task Controller Admin Assign New Task to User" name="Task Controller Admin Assign New Task to User" time="0.01">
+    </testcase>
+  </testsuite>
+</testsuites>
