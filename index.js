@@ -18,6 +18,10 @@ app.use("/api/v1/task",taskRoutes);
 app.use("/api/v1/user",userRoutes);
 
 
+app.use("/",(req,res)=>{
+    res.send("Welcome to Backend API");
+});
+
 app.use((err, req, res, next) => {
     err.statusCode = err.statusCode || 500;
     err.message = err.message || 'Internal Server Error';
