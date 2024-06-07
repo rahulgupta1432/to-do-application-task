@@ -18,7 +18,7 @@ const corsOptions = {
     credentials: true
   };
 
-app.use(cors(corsOptions));
+// app.use(cors(corsOptions));
 app.use(cors())
 
 app.use("/api/v1/auth",authRoutes);
@@ -26,7 +26,7 @@ app.use("/api/v1/task",taskRoutes);
 app.use("/api/v1/user",userRoutes);
 
 
-app.use("/",(req,res)=>{
+app.get("/",(req,res)=>{
     res.send("Welcome to Backend API");
 });
 
